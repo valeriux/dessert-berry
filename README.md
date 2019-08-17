@@ -8,4 +8,3 @@ Installation
 - node seeds.js -- Command to insert the information in my database.
 - node index.js
 - npm run serve
-- npm run client
