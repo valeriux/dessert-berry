@@ -38,15 +38,12 @@ module.exports = {
   },
 
   devServer: {
+    contentBase: path.resolve('src'),
     hot: true,
-    inline: true,
-    port: 8000,
     open: true,
-    contentBase: 'src',
+    port: 8000,
     watchContentBase: true,
-    proxy: {
-      '/api': 'http://localhost:4000'
-    }
+    proxy: { '/api': 'http://localhost:4000'} // this fixes our CORS issues
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
