@@ -1,2 +1,2 @@
-# dessert-berry
+# Dessert-berry
 Technical Test
