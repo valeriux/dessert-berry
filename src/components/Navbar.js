@@ -33,7 +33,7 @@ class Navbar extends React.Component {
           </div>
           <div className={`navbar-menu${this.state.active ? ' is-active' : ''}`}>
             <div className="navbar-start">
-              <Link to="/desserts" className="navbar-item">Search for a Dessert</Link>
+              <Link to="/desserts" className="navbar-item">Explore our desserts</Link>
             </div>
 
           </div>

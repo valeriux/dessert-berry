@@ -1,0 +1,271 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/************************************* HOME SECTION *************************************/
+
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+hr.top {
+  margin-top: 200px;
+  height: 5px;
+  border: solid #FFE6EE;
+}
+
+hr.bottom {
+  height: 5px;
+  border: dotted pink;
+}
+
+.CanaryCoffeeTitle {
+  font-family: 'Poiret One', cursive;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.IntroductionText {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/************************************* CHEVRON EFFECT  *************************************/
+
+#scroll-chevron {
+  text-align: center;
+  font-size: 55px;
+  color: #FBD2D7;
+}
+
+.bounce {
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 3s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+/************************************* DESSERT CARD SECTION *************************************/
+
+/* Background color and padding bottom*/
+section.Menu {
+  background-color: #505050;
+  padding-bottom: 50px;
+}
+
+h3.title.is-1 {
+  font-family: 'Poiret One', cursive;
+  padding-top: 25px;
+  color: rgb(218, 224, 230);
+  text-align: center;
+  font-weight: 120px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgb(43, 44, 46), 1px -1px 0 rgb(43, 44, 46), -1px 1px 0 rgb(43, 44, 46), 1px 1px 0 rgb(43, 44, 46);
+}
+
+div.card {
+  background-color: rgba(96, 98, 102, 0.1);
+}
+
+img.content-image {
+  height: 300px;
+  width: 450px;
+  border: solid #CDCDCD 3px;
+}
+
+/* Overlay color effect for the image*/
+.content .content-overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 300px;
+  width: 95%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 0.9;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.fadeIn-bottom{
+  top: 90%;
+}
+
+
+p.white-title {
+  color: rgb(218, 224, 230);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+
+}
+
+#white-title1{
+  margin-bottom: 0.3em;
+}
+
+p.content-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 18px;;
+  color: white;
+}
+
+span{
+    display: block;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(218, 224, 230);
+
+}
+
+
+
+/************************************* MAPBOX *************************************/
+
+section.Map {
+  background-color: #696969;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+
+.marker {
+  width: 50px;
+  height: auto;
+}
+
+div.column.is-two-thirds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapbox {
+  border: dotted #ECB7BF 3px;
+  border-radius: 20px;
+  border: dotted #ECB7BF 3px;
+}
+
+/***************************/
+
+.popup {
+  border-radius: 25px;
+}
+
+// .popupimage {
+//   height: 50px;
+//   width: 50px;
+//   border-radius: 17px;
+//   padding: 10px;
+// }
+  .mapboxgl-popup-content {
+  border-radius: 40px;
+
+}
+
+.poptitle {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.marker{
+ width: 40px;
+ height: 40px;
+}
+
+
+
+
+
+/************************************* FOOTER *************************************/
+
+div.column.is-one-third {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ECB7BF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.5);
+    height: 20px;
+    left:0;
+    bottom:0;
+    right:0;
+    margin-top: auto;
+}
+
+footer p {
+    text-align: center;
+    align-self: flex-end;
+    padding-top: 15px;
+    font-size: 12px;
+
+}
