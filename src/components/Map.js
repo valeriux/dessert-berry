@@ -19,7 +19,6 @@ class DessertMap extends React.Component {
     }
   }
 
-
   render() {
     return (
       <section className='Map' >
@@ -38,7 +37,6 @@ class DessertMap extends React.Component {
               }}
             >
 
-
               <Marker className="marker"
                 coordinates={[this.state.longitude, this.state.latitude]}
                 anchor="bottom"
@@ -47,22 +45,17 @@ class DessertMap extends React.Component {
               </Marker>
 
 
-
               <Popup className="popup"
                 coordinates={[this.state.longitude, this.state.latitude]}
                 offset={{
                   'bottom-left': [12, -38],  'bottom': [0, -38], 'bottom-right': [-12, -38]
                 }}>
-
                 <div>
-
                   <h3 className="poptitle">{this.state.address}</h3>
                 </div>
               </Popup>
-
             </Map>
           </div>
-
         </div>
       </section>
     )

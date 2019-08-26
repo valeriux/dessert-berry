@@ -1,5 +1,4 @@
 import React from 'react'
-//import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 
@@ -30,9 +29,7 @@ class DessertShow extends React.Component {
               <h1 className="title is-1">{this.state.data.name}</h1>
             </div>
           </div>
-
           <hr/>
-
           <div className="columns">
             <div className="column">
               <figure className="image">
@@ -40,7 +37,6 @@ class DessertShow extends React.Component {
               </figure>
             </div>
           </div>
-
         </div>
       </section>
     )
