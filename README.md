@@ -29,7 +29,7 @@ The brief was to build a full-stack application with a React front-end and NoSQL
 
 The application is deployed via Git on Heroku and can be found here: [Dessert Berry](https://dessert-berry.herokuapp.com/#/menu).
 
-## Installation
+# Installation
 
 - Clone or download the repo.
 
