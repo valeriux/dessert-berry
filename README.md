@@ -3,9 +3,11 @@
 <img width="1438" alt="Screenshot 2019-08-27 at 15 28 26" src="https://user-images.githubusercontent.com/47470930/63780099-823feb00-c8df-11e9-8607-34e31b1a0562.png">
 
 # Timeframe
+
 4 hours
 
 # Technologies used
+
 * React
 * Webpack  
 * Axios
@@ -21,7 +23,7 @@
 * Insomnia
 
 
-## Dessert Berry - React project
+# Dessert Berry - React project
 
 The brief was to build a full-stack application with a React front-end and NoSQL database (MongoDB). The application had to include data schema and a RESTful API framework.
 
