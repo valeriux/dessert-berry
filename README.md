@@ -7,16 +7,18 @@
 
 # Technologies used
 * React
-* Webpack
+* Webpack  
+* Axios
 * MongoDB/Mongoose
 * Express
 * Ajax
-* JavaScript (ES6)
-* HTML5
+* JavaScript (ES6)  
+* HTML5  
 * Bulma (CSS framework)
-* SCSS
-* GitHub
+* SCSS  
+* GitHub 
 * ReactMapBox-GL
+* Insomnia
 
 
 ## Dessert Berry - React project
