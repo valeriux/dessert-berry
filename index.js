@@ -9,6 +9,9 @@ const app = express()
 mongoose.connect('mongodb://localhost:27017/dessert-db')
 
 
+//This tells Express that the frontend files are in `dist`
+app.use(express.static(`${__dirname}/dist`))
+
 app.use(bodyParser.json())
 app.use(routes) //Go to the next app.use
 app.use(errorHandler)
