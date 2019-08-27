@@ -3,11 +3,10 @@ const bodyParser = require('body-parser') //This comes with express. const mongo
 const mongoose = require('mongoose')
 const routes = require('./config/routes')
 const errorHandler = require('./lib/errorHandler')
-
+const { port, dbUri } = require('./config/environment')
 
 const app = express()
-mongoose.connect('dbUri')
-
+mongoose.connect(dbUri)
 
 //This tells Express that the frontend files are in `dist`
 app.use(express.static(`${__dirname}/dist`))
@@ -17,4 +16,4 @@ app.use(routes) //Go to the next app.use
 app.use(errorHandler)
 app.use('/api', routes)
 
-app.listen(4000, () => console.log('Desserts are comming on port 4000'))
+app.listen(port, () => console.log(`Desserts are coming on port ${port}`))
