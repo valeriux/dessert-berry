@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
+const { dbUri } = require('./config/environment')
 const Dessert = require('./models/Dessert')
 
 //Connect to the database.
-mongoose.connect('mongodb://localhost:27017/dessert-db', (err, db) => {
+mongoose.connect(dbUri, (err, db) => {
 
   //Delete the database (yeah really we are doing that!!!)
   db.dropDatabase()

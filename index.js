@@ -6,7 +6,7 @@ const errorHandler = require('./lib/errorHandler')
 
 
 const app = express()
-mongoose.connect('mongodb://localhost:27017/dessert-db')
+mongoose.connect('dbUri')
 
 
 //This tells Express that the frontend files are in `dist`
