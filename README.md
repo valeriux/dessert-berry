@@ -30,7 +30,7 @@ The application is deployed via Git on Heroku and can be found here: [Dessert Be
 ## Installation
 
 - Clone or download the repo.
-###### Execute  this commands:
+##### Execute  this commands:
 
 * mongod -- Command to run the database.
 * node seeds.js -- Command to insert the information in my database.
