@@ -116,13 +116,26 @@ img.content-image {
   height: 300px;
   width: 95%;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  transition: .5s ease;
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+@-webkit-keyframes animat_show {
+  0% {
+      opacity: 0
+  }
+  100% {
+      opacity: 1
+  }
 }
 
 .content:hover .content-overlay{
-  opacity: 0.9;
+  opacity: 1;
+}
+
+.content:hover .text{
+  opacity: 1;
 }
 
 .content-details {
@@ -137,9 +150,7 @@ img.content-image {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+
 }
 
 .content:hover .content-details{
