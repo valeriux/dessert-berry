@@ -1,4 +1,4 @@
-# Dessert-berry - Technical Test
+# Dessert-berry
 
 <img width="1438" alt="Screenshot 2019-08-27 at 15 28 26" src="https://user-images.githubusercontent.com/47470930/63780099-823feb00-c8df-11e9-8607-34e31b1a0562.png">
 
